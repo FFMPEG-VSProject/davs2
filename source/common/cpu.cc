@@ -166,6 +166,9 @@ char *davs2_get_simd_capabilities(char *buf, uint32_t cpuid)
 
 #if !ARCH_X86_64
 /*  */
+#ifdef __cplusplus
+extern "C"
+#endif
 int  davs2_cpu_cpuid_test(void);
 #endif
 
